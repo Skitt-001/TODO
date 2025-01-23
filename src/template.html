@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>TODO</title>
+</head>
+<body>
+    <div id="sideNav">
+        <div id="sideNavTop">
+            <h1>TODO App</h1>
+            <button id="openModal">+</button>
+        </div>
+        <div>
+        </div>
+    </div>
+    <div class="modal" id="modalshow">
+        <div class="modal-inner">
+            <div class="modal-title">
+                <h2>Add a new event</h2>
+                <button id="modalClose">X</button>
+            </div>
+            <label>Title</label>
+            <input type="text" id="titleInput">
+            <label>Due by</label>
+            <input type="date" id="dateInput">
+            <label>Description</label>
+            <input type="text" id="descriptionInput">
+            <div class="priorityDiv">
+                <label>Priority</label>
+                <div>
+                    <button id="lowPriority" class="priorityButtons" data-priority="low">Low</button>
+                    <button id="mediumPriority" class="priorityButtons" data-priority="medium">Medium</button>
+                    <button id="highPriority" class="priorityButtons" data-priority="high">High</button>
+                </div>
+                <button id="addBtn">Add To List</button>
+            </div>
+        </div>
+    </div>
+    <div class="content">
+    </div>
+    
+</body>
+</html>

@@ -1,0 +1,223 @@
+body{
+    display: flex;
+    flex-direction: row;
+    margin: 0;
+    padding: 0;
+
+}
+.modal{
+    position: fixed;
+    display: none;
+    width: 100%;
+    height: 100%;
+    text-align: center;
+    background-color: rgba(0, 0, 0, 0.5);
+
+    .modal-inner{
+        display: flex;
+        flex-direction: column;
+        background-color: #617483;
+        width: 35%;
+        margin: 8% auto;
+        font-size: 1.4em;
+        border-radius: 8%;
+        
+        .modal-title{
+            display: flex;
+            justify-content: space-evenly;
+            align-items: center;
+            font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+
+            h2{
+                color: white;
+                font-weight: normal;
+                flex: 1 1 auto;
+                margin-right: 5%;
+            }
+
+            button {
+                font-size: 1.8em;
+                border: none;
+                border-radius: 5%;
+                background-color: transparent;
+                color: white;
+                margin-right: 5%;
+            }
+        }
+        input[type="text"], input[type="date"] {
+            display: block;
+            width: 50%;
+            max-width: 100%;
+            margin: 10px auto;
+            padding: 10px;
+            font-size: 1em;
+            resize: vertical;
+        }
+
+        .priorityDiv{
+            display: flex;
+            flex-direction: column;
+            
+            div{
+                display: flex;
+                flex-direction: row;
+                font-size: 1.5em;
+                margin: 2%;
+                height: fit-content;
+                flex-wrap: wrap;
+                width: fit-content;
+                justify-content: space-evenly;
+
+                button{
+                    background-color: white;
+                    border: none;
+                    border-radius: 10%;
+                    padding: 10px;
+                    color: white;
+                    flex: 1 1 auto;
+                    font-size: 0.8em;
+                    margin: 15px;
+
+                }
+
+                #lowPriority{
+                    background-color: rgba(39, 172, 55, 0.5);
+                }
+
+                #mediumPriority{
+                    background-color: rgb(196, 217, 102, 0.5);
+                }   
+
+                #highPriority {
+                    background-color: rgb(180, 33, 33, 0.5);
+                }
+
+            }
+        }
+        div{
+            display: flex;
+            flex-direction: row;
+            justify-content: center;
+            align-items: center;
+        }
+
+        #addBtn{
+            background-color: #6c879b;
+            color: white;
+            font-size: 1.8em;
+            border-radius: 8%;
+            border: none;
+            margin: 10px;
+            flex: 1 1 auto;
+        }
+    }
+}
+#sideNav{
+    background-color: #495867;
+    width: 25%;
+    height: 100vh;
+    color: white;
+    border-radius:2%;
+
+    #sideNavTop{
+        display: flex;
+        flex-direction: row;
+        justify-content: space-evenly;
+        align-items: center;
+        color:rgb(237, 232, 232);
+        background-color: #4d6276;
+        border-radius:3%;
+        font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+
+        button{
+            margin-left: 15%;
+            font-size: 2.5em;
+            border:none;
+            color: white;
+            background-color: transparent;
+
+        }
+        button:hover{
+            color: rgb(209, 206, 206);
+        }
+    }
+}
+.content{
+    background-color: #869fb5;
+    display: flex;
+    width: calc(100% - 250px);
+    justify-content: row;
+    flex-wrap: wrap;
+    
+    .todoCard{
+        background-color: rgb(189, 172, 140);
+        height: fit-content;
+        min-width: 200px;
+        max-width: 300px; /* Set a maximum width */
+        padding: 16px;
+        text-align: left; /* Align text to the left for readability */
+        padding: 2%;
+        text-align: center;
+        color: rgb(49, 45, 45);
+        border: solid;
+        border-color:  white;
+        text-wrap: wrap;
+        word-wrap: break-word;
+        word-break: break-word; 
+        box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); 
+        border-radius: 8px;
+        margin: 8px;
+        
+        p{
+            color: rgb(0, 0, 0);
+            font-size: 1.5em;
+            background-color: white;
+            border: solid;
+            border-color: rgb(167, 154, 130);
+        }
+        label{
+            font-size: 1.5em;
+            color: white;
+        }
+        h1{
+            color: white;
+            flex-wrap: wrap;
+            font-size: 2.5em;
+        }
+        pre{
+            color: white;
+            font-size: 1.5em;
+        }
+        #button_div{
+            display: flex;
+            flex-direction: row;
+            gap: 5px;
+        }
+        #todoDelBtn{
+            background-color: rgb(159, 40, 40);
+            font-size: 1.5em;
+            border-radius: 10px;
+            border: none;
+            color: white;
+            margin-top: 5px;
+            flex: 1 1 auto;
+            flex-wrap: wrap;
+        }
+        #todoDoneBtn{
+            background-color: rgb(79, 145, 70);
+            font-size: 1.5em;
+            border-radius: 10px;
+            border: none;
+            color: white;
+            margin-top: 5px;
+            flex: 1 1 auto;
+            flex-wrap: wrap;
+        }
+        button:hover{
+            background-color: rgba(132, 21, 21);
+        }
+        button:active{
+            background-color: rgb(159, 40, 40);
+        }
+    }
+}
